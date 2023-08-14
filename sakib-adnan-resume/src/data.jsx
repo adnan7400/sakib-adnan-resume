@@ -9,9 +9,9 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Theme1 from './assets/color-blue.png'
-import Theme2 from './assets/color-red.png'
-import Theme3 from './assets/color-yellow.png'
+import Theme1 from './assets/circle-blue.png'
+import Theme2 from './assets/circle-red.png'
+import Theme3 from './assets/circle-yellow.png'
 
 
 
