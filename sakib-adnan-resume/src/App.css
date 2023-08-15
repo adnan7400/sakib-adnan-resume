@@ -4,7 +4,7 @@
 /*=============CSS Variables======*/
 :root {
     /*====== Colors=======*/
-    --first-color: hsl(271, 76%, 53);
+    --first-color: hsl(271, 76%, 53%);
     --title-color: hsl(0, 0%, 40%);
     --text-color: hsl(0, 0%, 50%);
     --body-color: hsl(0, 0%, 100%);
