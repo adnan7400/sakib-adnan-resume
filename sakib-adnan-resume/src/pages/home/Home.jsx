@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import {FaArrowRight} from "react-icons/fa";
 import "./home.css"
 import { description } from "../../data.jsx"
+import Resume from "../../assets/Sakib-Adnan-Resume.pdf"
+import { FaDownload } from 'react-icons/fa'; 
 
 const Home = () => {
   return (
@@ -20,11 +22,18 @@ const Home = () => {
                 <br></br>
                 <p className="home__description">{description}</p>
                 <Link to="/about" className="button">
-                    More About Me{' '} 
+                    About Me{' '} 
                     <span className='button__icon'>
                         <FaArrowRight />
                     </span>
                 </Link>
+                {" "}
+                <a href={Resume} download="" className="button">
+                        Download Resume 
+                        <span className="button__icon">
+                            <FaDownload />
+                        </span>
+                </a>
             </div> 
         </div>
 

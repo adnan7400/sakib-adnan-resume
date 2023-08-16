@@ -30,16 +30,24 @@ export const links = [
     },
     {
         id: 3,
-        name: 'Project',
-        icon: <FaFolderOpen className='nav__icon' />,
-        path: '/project'
+        name: 'Experience',
+        icon: <FaBriefcase className='nav__icon' />,
+        path: '/experience'
     },
     {
         id: 4,
+        name: 'Skills',
+        icon: <FaCode className='nav__icon' />,
+        path: '/skills'
+    },
+    {
+        id: 5,
         name: 'Contact',
         icon: <FaEnvelopeOpen className='nav__icon' />,
         path: '/contact'
     }
+    
+    
 ];
 
 export const personalInfo = [
