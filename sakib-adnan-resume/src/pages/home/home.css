@@ -57,7 +57,7 @@
 }
 
 
-.color__block {
+/* .color__block {
     position: fixed;
     height: 200%;
     width: 100%;
@@ -65,4 +65,4 @@
     top: -50%;
     left: -83%;
     transform: rotate(-15deg);
-}
+} */

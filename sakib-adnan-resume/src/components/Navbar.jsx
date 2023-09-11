@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import {NavLink} from 'react-router-dom';
 import { links } from '../data';
 import './navbar.css'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <nav className="nav">
+        <img src={logo} alt='Logo' className='logo'/>
         <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
             <ul className='nav__list'>
               {links.map(({name,icon,path}, index) => {

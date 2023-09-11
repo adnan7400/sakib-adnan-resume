@@ -36,10 +36,6 @@ const Home = () => {
                 </a>
             </div> 
         </div>
-
-        <div className="color__block">
-
-        </div>
     </section>
   )
 }
