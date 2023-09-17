@@ -1,3 +1,11 @@
+.logo {
+    height:40px;
+    width:40px;
+    position: inherit;
+    left: 25px;
+    top: 7px;
+   }
+   
 .nav__menu {
     position: fixed;
     inset-block: 0;
