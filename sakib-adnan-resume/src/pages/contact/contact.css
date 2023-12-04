@@ -45,7 +45,7 @@ contact__info .info__icon {
     column-gap : 16px;
 }
 
-contact__social-link {
+.contact__social-link {
     background-color: var(--container-color);
     color: var(--title-color);
     width: 40px;
@@ -55,3 +55,102 @@ contact__social-link {
     line-height: 44px;
     transition: all 0.3s ease-in;
 }
+
+.contact__social-link:hover {
+    background-color: var(--first-color);
+    color: var(--text-white);
+}
+
+.form__input-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.form__input-div {
+    margin-bottom: 30px;
+}
+
+.form__control {
+    border: 1px solid var(--container-color);
+    background-color: var(--container-color);
+    color: var(--title-color);
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: var(--small-font-size);
+    transition: all 03.s ease;
+}
+
+.form__control:focus {
+    border-color: var(--first-color);
+}
+
+.textarea {
+    resize: none;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.check-box{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+}
+
+.check-box svg{
+    width: 40px;
+    margin: 20px;
+}
+
+svg path{
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active{
+    background: #ff2b75;
+    transition: 1s;
+}
+
+.active .check-box{
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p{
+    margin-right: 125px;
+    transition: 1s;
+}
+
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+@keyframes loading {
+    30% {
+      opacity:1; 
+    }
+    
+    85% {
+      opacity:1;
+      transform: rotate(1080deg);
+      border-color: #262626;
+    }
+    100% {
+      opacity:1;
+      transform: rotate(1080deg);
+       border-color: #1c89ff;
+    }
+  }

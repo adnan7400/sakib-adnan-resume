@@ -57,4 +57,4 @@ export const personalInfo = [
 export const description = "I'm a Vancouver based Software engineer with a demonstrated history of implementing Payments Solutions services. In my current role, I am working in an agile development team to write Java, JavaScript, Typescript code for Enterprise Payment Processing services using Node.js, Express, Spring Boot and deploy products using Docker, Kubernetes, Rancher."
 
 
-export const contactDescription = "Please send me a message if you would like to talk. I am always open to discussing new projets, ideas or opportunities."
+export const contactDescription = "Please send me a message if you would like to talk. I am always open to discussing new projects, ideas or opportunities."
