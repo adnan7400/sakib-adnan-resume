@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {NavLink} from 'react-router-dom';
+import {images} from '../../src/constants';
+import './Navbar.scss';
 import { links } from '../data';
-import './navbar.css'
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
-    <nav className="nav">
-        <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
-            <ul className='nav__list'>
-              {links.map(({name,icon,path}, index) => {
+    <nav>
+        <div>
+            <img src={images.logo} alt="logo"/>
+        </div>
+        <ul>
+        {links.map(({name,icon,path}, index) => {
                 return (
                   <li className='nav__item' key={index}>
                     <NavLink 
@@ -26,16 +27,7 @@ const Navbar = () => {
                   </li>
                 )
               })}
-            </ul>
-        </div>
-        <div 
-          className={`${showMenu ? 'nav__toggle animate-toggle' : 'nav__toggle'}`} 
-          onClick={()=> setShowMenu(!showMenu)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        </ul>
     </nav>
   )
 }
