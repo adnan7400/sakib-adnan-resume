@@ -1,25 +1,18 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
+import React from 'react';
+import { About, Footer, Header, Skills, Work } from './container';
+import {Navbar} from './components';
 
-import Navbar from "./components/Navbar"
-import Home from './pages/home/Home'
-import About from './pages/about/About'
-import Contact from './pages/contact/Contact'
-import Project from './pages/project/Project'
-
-function App() {
-  return (
-    <BrowserRouter>
+const App = () => {
+    return (
+      <div className='App'>
         <Navbar />
-        <Routes>
-            <Route index element={<Home />} />
-            <Route path='about' element={<About />} />
-            <Route path='project' element={<Project />} />
-            <Route path='contact' element={<Contact />} />
-        </Routes>
-    </BrowserRouter>
-  )
-}
-
-export default App
+        <Header />
+        <About />
+        <Work />
+        <Skills />
+        <Footer />   
+      </div>
+    )
+  };
+  
+  export default App;
