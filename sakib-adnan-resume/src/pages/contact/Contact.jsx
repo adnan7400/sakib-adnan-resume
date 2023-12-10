@@ -4,6 +4,8 @@ import { contactDescription } from '../../data.jsx';
 import { FaEnvelopeOpen, FaFacebookF, FaLinkedin, FaPhoneSquareAlt, FaYoutube } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import './contact.css';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
@@ -19,6 +21,18 @@ const Contact = () => {
           console.log(error.text);
       });
   };
+
+  const notify = () => toast('🟣 Email Sent!', 
+    {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });
 
   return (
     <section className="contact section">
@@ -64,7 +78,7 @@ const Contact = () => {
                     </a>
                 </div>
             </div>
-            <form ref={form} onSubmit={sendEmail} className="contact__form">
+            <form ref={form} onSubmit={console.log("ssds")} className="contact__form">
                     <div className="form__input-group">
                         <div className="form__input-div">
                             <input type="text" 
@@ -89,17 +103,13 @@ const Contact = () => {
                         className="form__control textarea">
                         </textarea>
                     </div>
-                    <button className='button' type="submit">
+                    <button className='button' type="submit" onClick={notify}>
                         Send
                         <span className="button__icon contact__button-icon">
                             <FiSend />
                         </span>
-                        <div class="check-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                            </svg>
-                        </div>
                     </button>
+                    <ToastContainer />
                     
                 </form>
         </div>
